@@ -1,0 +1,124 @@
+/*---------STANDART STYLES------------*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    font-size: 16px;
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a, a:hover {
+    -webkit-transition: background 0.1s ease-in-out, border 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out, border 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+img {
+    border: none;
+}
+
+#overflow_div {
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1, .h1 {
+    font-size: 30px;
+    margin: 0 0 25px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2, .h2 {
+    font-size: 1.5em;
+    margin: 0.83em;
+    font-weight: bold;
+}
+/*---------/STANDART STYLES------------*/
+
+
+/*---------OTHER STYLES------------*/
+.notice-wraper{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.notice-container{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.notice {
+    position: relative;
+    width: 440px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    top: -100px;
+
+    font-size: 24px;
+    text-align: center;
+
+    border-radius: 6px;
+    border: solid 2px #ccc;
+
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .75);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .75);
+}
+
+.notice .text {
+    font-size: 20px;
+}
+
+.notice .text span{
+    text-transform: uppercase;
+}
+
+.link-container{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.notice .link-wraper{
+    text-align: left;
+}
+
+.notice .link {
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.notice .link span{
+
+}
+
+.notice .link:hover span{
+    text-decoration: underline;
+}
+/*---------/OTHER STYLES------------*/

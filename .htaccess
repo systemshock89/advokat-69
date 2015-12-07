@@ -1,0 +1,39 @@
+DirectoryIndex index.html
+
+AddDefaultCharset utf-8
+
+#ErrorDocument 404 /e404.php
+
+<ifModule mod_rewrite.c>
+RewriteEngine On
+
+#убрать расширение .php из пути
+RewriteRule ^(\w+)$ $1.php [NC]
+
+#Редирект с домена с www на домен БЕЗ www (по умолч.)
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+#Редирект с index.php на главную
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP
+RewriteRule ^index\.php$ http://www.advokat-69.ru/ [R=301,L]
+
+#Редирект с index на главную
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP
+RewriteRule ^index$ http://www.advokat-69.ru/ [R=301,L]
+
+#Редирект с index/ на главную
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index/\ HTTP
+RewriteRule ^index/$ http://www.advokat-69.ru/ [R=301,L]
+
+#Редирект с index.html на главную
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP
+RewriteRule ^index\.html$ http://www.advokat-69.ru/ [R=301,L]
+
+#301 редирект страниц со слэшем и без
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
+</ifModule>

@@ -1,0 +1,65 @@
+/*---------RESPONSIVE STYLES------------*/
+/* FOR TABLET - max-width: 1000px */
+@media only screen and (max-width: 1000px) {
+
+    img,
+    iframe,
+    video{
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+    }
+
+    #overflow_div{
+        min-width: inherit;
+    }
+
+}
+/* /FOR TABLET - max-width: 1000px */
+
+
+/* FOR PHONE - max-width: 650px */
+@media only screen and (max-width: 650px) {
+
+    .notice-wraper{
+        width: 90%;
+        margin: 15px auto 0 auto;
+    }
+
+    .notice-container{
+        vertical-align: top;
+    }
+
+    .notice {
+        width: auto;
+        font-size: 18px;
+        top: 0;
+    }
+
+    h1, .h2{
+        font-size: 22px;
+    }
+
+}
+/* /FOR PHONE - max-width: 650px */
+
+
+/* FOR PHONE - max-width: 400px */
+@media only screen and (max-width: 400px) {
+    .notice {
+        font-size: 16px;
+    }
+
+    h1, .h2{
+        font-size: 18px;
+    }
+}
+
+/* FOR IPHONE - max-width: 320px */
+@media only screen and (max-width: 320px) {
+
+
+
+}
+/* /FOR IPHONE - max-width: 320px */
+/*---------RESPONSIVE STYLES------------*/
