@@ -121,4 +121,11 @@ h2, .h2 {
 .notice .link:hover span{
     text-decoration: underline;
 }
+
+.counters {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
 /*---------/OTHER STYLES------------*/
