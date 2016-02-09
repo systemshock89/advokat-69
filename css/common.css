@@ -93,10 +93,24 @@ h2, .h2 {
 
 .notice .text {
     font-size: 20px;
+    margin-top: 15px;
 }
 
 .notice .text span{
     text-transform: uppercase;
+}
+
+.notice .text-container{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.notice .text-container ul{
+    text-align: left;
+}
+
+.notice .text-container ul li{
+    margin: 10px 0;
 }
 
 .link-container{
