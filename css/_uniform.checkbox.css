@@ -1,0 +1,43 @@
+div.checker span, div.checker.active span, div.checker.hover span, div.checker.focus span, div.checker.hover.active span, div.checker.focus.active span, div.checker.hover.disabled span, div.checker.hover.disabled.active span, div.checker.focus.disabled span, div.checker.focus.disabled.active span {
+  background-position: 0 0;
+}
+
+div.checker span.checked, div.checker.active span.checked, div.checker.hover span.checked, div.checker.focus span.checked, div.checker.hover.active span.checked, div.checker.focus.active span.checked, div.checker.hover.disabled span.checked, div.checker.hover.disabled.active span.checked, div.checker.focus.disabled span.checked, div.checker.focus.disabled.active span.checked {
+  background-position: -20px 0;
+}
+
+div.checker,
+div.checker span,
+div.checker input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+div.checker {
+  margin-right: 5px;
+  position: relative;
+}
+
+div.checker span {
+  background-image: url("../img/temp/checkbox.png");
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+}
+
+div.checker input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  border: none;
+  background: none;
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
